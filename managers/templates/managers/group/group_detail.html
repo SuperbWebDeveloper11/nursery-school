@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h3>{{ group.name }} Taken by : {{ group.taken_by.name }} {{ group.taken_by.surname }}</h3>
+
+<!-- Display 'Edit' and 'Delete' buttons -->
+<br />
+{% if user.is_authenticated and group.created_by == request.user %}
+<p>
+<a href="{% url 'managers:group_update' group.pk %}" class="btn btn-outline-dark"> Update </a> 
+<a href="{% url 'managers:group_delete' group.pk %}" class="btn btn-outline-danger"> Delete </a>
+</p>
+{% endif %}
+
+{% endblock %}
+
+
+

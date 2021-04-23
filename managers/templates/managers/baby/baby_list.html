@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- Display a button to add new baby -->
+{% if user.is_authenticated %}
+  <a href="{% url 'managers:baby_add' %}" class="btn btn-outline-dark mb-5"> add new baby </a> 
+{% endif %}
+
+
+<!-- Display list of all babys -->
+{% for baby in baby_list %}
+<div class="card bg-light mb-3" style="max-width: 100%;">
+  <div class="card-header">{{ baby.name }} {{ baby.surname}} </div>
+  <div class="card-body">
+    <a href="{{ baby.get_absolute_url }}">Details</a>
+  </div>
+</div>
+{% empty %}
+<p>No babys Yet</p>
+{% endfor %}
+
+
+<!-- Display pagination only if page_obj have some value -->
+{% if page_obj %}
+  {% include "managers/baby/pagination.html" with page=page_obj %}
+{% endif %}
+
+
+{% endblock %}

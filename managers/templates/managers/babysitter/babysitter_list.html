@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- Display a button to add new babysitter -->
+{% if user.is_authenticated %}
+  <a href="{% url 'managers:babysitter_add' %}" class="btn btn-outline-dark mb-5"> add new babysitter </a> 
+{% endif %}
+
+
+<!-- Display list of all babysitters -->
+{% for babysitter in babysitter_list %}
+<div class="card bg-light mb-3" style="max-width: 100%;">
+  <div class="card-header">{{ babysitter.name }} {{ babysitter.surname}} </div>
+  <div class="card-body">
+    <a href="{{ babysitter.get_absolute_url }}">Details</a>
+  </div>
+</div>
+{% empty %}
+<p>No babysitters Yet</p>
+{% endfor %}
+
+
+<!-- Display pagination only if page_obj have some value -->
+{% if page_obj %}
+  {% include "managers/babysitter/pagination.html" with page=page_obj %}
+{% endif %}
+
+
+{% endblock %}

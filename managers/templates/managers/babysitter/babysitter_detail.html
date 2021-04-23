@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h3>{{ babysitter.name }} {{ babysitter.surname }}</h3>
+
+<div>
+    <p>Name: <b>{{ babysitter.name }}</b></p>
+    <p>Surname: <b>{{ babysitter.surname }}</b></p>
+    <p>Date Of Bearth: <b>{{ babysitter.date_of_bearth }}</b></p>
+    {% if babysitter.picture %}
+      <img src="{{ babysitter.picture.url }}" alt="Image">
+    {% else %}
+      {#<img src="{{ babysitter.picture.url }}" alt="Image">#}
+    {% endif %}
+</div>
+
+<!-- Display 'Edit' and 'Delete' buttons -->
+<br />
+{% if user.is_authenticated and babysitter.created_by == request.user %}
+<p>
+<a href="{% url 'managers:babysitter_update' babysitter.pk %}" class="btn btn-outline-dark"> Update </a> 
+<a href="{% url 'managers:babysitter_delete' babysitter.pk %}" class="btn btn-outline-danger"> Delete </a>
+</p>
+{% endif %}
+
+{% endblock %}
+
+
+

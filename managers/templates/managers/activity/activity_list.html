@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Display a button to add new activity -->
+{% if user.is_authenticated %}
+  <a href="{% url 'managers:activity_add' %}" class="btn btn-outline-dark mb-5"> add new activity </a> 
+{% endif %}
+
+<!-- Display list of all activitys -->
+{% for activity in activity_list %}
+<div class="card bg-light mb-3" style="max-width: 100%;">
+  <div class="card-header">{{ activity.title }}</div>
+  <div class="card-body">
+    <a href="{{ activity.get_absolute_url }}">Details</a>
+  </div>
+</div>
+{% empty %}
+<p>No activitys Yet</p>
+{% endfor %}
+
+
+<!-- Display pagination only if page_obj have some value -->
+{% if page_obj %}
+  {% include "managers/activity/pagination.html" with page=page_obj %}
+{% endif %}
+
+
+{% endblock %}

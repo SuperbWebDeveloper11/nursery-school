@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Display a button to add new group -->
+{% if user.is_authenticated %}
+  <a href="{% url 'managers:group_add' %}" class="btn btn-outline-dark mb-5"> add new group </a> 
+{% endif %}
+
+<!-- Display list of all groups -->
+{% for group in group_list %}
+<div class="card bg-light mb-3" style="max-width: 100%;">
+  <div class="card-header">{{ group.name }} - Taken by {{ group.taken_by.name }} {{ group.taken_by.surname}} </div>
+  <div class="card-body">
+    <a href="{{ group.get_absolute_url }}">Details</a>
+  </div>
+</div>
+{% empty %}
+<p>No groups Yet</p>
+{% endfor %}
+
+
+<!-- Display pagination only if page_obj have some value -->
+{% if page_obj %}
+  {% include "managers/group/pagination.html" with page=page_obj %}
+{% endif %}
+
+
+{% endblock %}

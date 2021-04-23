@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Display a button to add new sitting -->
+{% if user.is_authenticated %}
+  <a href="{% url 'managers:sitting_add' %}" class="btn btn-outline-dark mb-5"> add new sitting </a> 
+{% endif %}
+
+
+<!-- Display list of all sittings -->
+{% for sitting in sitting_list %}
+<div class="card bg-light mb-3" style="max-width: 100%;">
+  <div class="card-header">{{ sitting.done_by.name }}</div>
+  <div class="card-body">
+    <a href="{{ sitting.get_absolute_url }}">Details</a>
+  </div>
+</div>
+{% empty %}
+<p>No sittings Yet</p>
+{% endfor %}
+
+
+<!-- Display pagination only if page_obj have some value -->
+{% if page_obj %}
+  {% include "managers/sitting/pagination.html" with page=page_obj %}
+{% endif %}
+
+
+{% endblock %}

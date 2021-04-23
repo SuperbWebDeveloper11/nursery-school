@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %} Login {% endblock %}
+
+{% block css_style %} 
+<style>
+  #login-form {
+    margin: 0 auto;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<div id='login-form' class='bg-light'>
+    <h3 class='text-primary text-center'>Sing In</h3>
+    <form action="{% url 'login' %}" method="post" class='uniForm' novalidate>
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="hidden" name="next" value="{{ next }}" />
+      <br>
+      <p><input type="submit" value="Sing In" class='btn btn-primary'></p>
+    </form>
+    <p><a href="{% url "password_reset" %}">Sign Up</a></p>
+</div>
+
+{% endblock %}
+

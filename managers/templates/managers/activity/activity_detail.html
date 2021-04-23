@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div>
+  <h3>{{ activity.title }} </h3>
+  <p>{{ activity.description }} </p>
+
+  {% if activity.picture %}
+  <img src="{{ activity.picture.url }}" alt="Image">
+  {% else %}
+  {#<img src="{{ activity.picture.url }}" alt="Image">#}
+  {% endif %}
+</div>
+
+<!-- Display 'Edit' and 'Delete' buttons -->
+<br />
+{% if user.is_authenticated and activity.created_by == request.user %}
+<p>
+<a href="{% url 'managers:activity_update' activity.pk %}" class="btn btn-outline-dark"> Update </a> 
+<a href="{% url 'managers:activity_delete' activity.pk %}" class="btn btn-outline-danger"> Delete </a>
+</p>
+{% endif %}
+
+{% endblock %}
+
+
+

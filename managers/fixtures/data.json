@@ -1,0 +1,461 @@
+[
+{
+  "model": "managers.babysitter",
+  "pk": 1,
+  "fields": {
+    "created": "2021-04-20T16:25:45.352Z",
+    "modified": "2021-04-20T16:25:45.353Z",
+    "name": "Mary",
+    "surname": "Mary",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 2,
+  "fields": {
+    "created": "2021-04-20T16:25:58.818Z",
+    "modified": "2021-04-20T16:25:58.818Z",
+    "name": "Patricia",
+    "surname": "Patricia",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_9lWrELa.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 3,
+  "fields": {
+    "created": "2021-04-20T16:26:12.890Z",
+    "modified": "2021-04-20T16:26:12.890Z",
+    "name": "Jennifer",
+    "surname": "Jennifer",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_lf5u1Ux.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 4,
+  "fields": {
+    "created": "2021-04-20T16:26:28.488Z",
+    "modified": "2021-04-20T16:26:28.488Z",
+    "name": "Linda",
+    "surname": "Linda",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_djI8190.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 5,
+  "fields": {
+    "created": "2021-04-20T16:26:42.560Z",
+    "modified": "2021-04-20T16:26:42.560Z",
+    "name": "Elizabeth",
+    "surname": "Elizabeth",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_W6LZSl1.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 6,
+  "fields": {
+    "created": "2021-04-20T16:27:00.322Z",
+    "modified": "2021-04-20T16:27:00.322Z",
+    "name": "Barbara",
+    "surname": "Barbara",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_gGoyxO1.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 7,
+  "fields": {
+    "created": "2021-04-20T16:27:15.766Z",
+    "modified": "2021-04-20T16:27:15.766Z",
+    "name": "Susan",
+    "surname": "Susan",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_2fx1MMj.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 8,
+  "fields": {
+    "created": "2021-04-20T16:27:39.590Z",
+    "modified": "2021-04-20T16:27:39.591Z",
+    "name": "Jessica",
+    "surname": "Jessica",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_95NjP5b.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.babysitter",
+  "pk": 9,
+  "fields": {
+    "created": "2021-04-20T16:27:53.379Z",
+    "modified": "2021-04-20T16:27:53.379Z",
+    "name": "Sarah",
+    "surname": "Sarah",
+    "date_of_bearth": "2021-04-20",
+    "picture": "babysitter_pictures/nursery-school-picture_3Wh9zKC.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.group",
+  "pk": 2,
+  "fields": {
+    "created": "2021-04-20T16:29:13.220Z",
+    "modified": "2021-04-20T16:29:22.982Z",
+    "name": "group A",
+    "taken_by": 9,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.group",
+  "pk": 3,
+  "fields": {
+    "created": "2021-04-20T16:29:37.822Z",
+    "modified": "2021-04-20T16:29:37.822Z",
+    "name": "group B",
+    "taken_by": 8,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.group",
+  "pk": 4,
+  "fields": {
+    "created": "2021-04-20T16:29:49.015Z",
+    "modified": "2021-04-20T16:29:49.015Z",
+    "name": "group C",
+    "taken_by": 7,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.group",
+  "pk": 5,
+  "fields": {
+    "created": "2021-04-20T16:30:01.486Z",
+    "modified": "2021-04-20T16:30:01.486Z",
+    "name": "group D",
+    "taken_by": 7,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.group",
+  "pk": 6,
+  "fields": {
+    "created": "2021-04-20T16:30:11.429Z",
+    "modified": "2021-04-20T16:30:11.429Z",
+    "name": "group E",
+    "taken_by": 6,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.group",
+  "pk": 7,
+  "fields": {
+    "created": "2021-04-20T16:30:26.695Z",
+    "modified": "2021-04-20T16:30:26.695Z",
+    "name": "group F",
+    "taken_by": 5,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 1,
+  "fields": {
+    "created": "2021-04-20T16:31:01.930Z",
+    "modified": "2021-04-20T16:31:01.930Z",
+    "name": "James",
+    "surname": "James",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture.jpeg",
+    "belong_to": 2,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 2,
+  "fields": {
+    "created": "2021-04-20T16:31:33.743Z",
+    "modified": "2021-04-20T16:31:33.743Z",
+    "name": "John",
+    "surname": "John",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_un2oDJM.jpeg",
+    "belong_to": 3,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 3,
+  "fields": {
+    "created": "2021-04-20T16:31:50.746Z",
+    "modified": "2021-04-20T16:31:50.746Z",
+    "name": "Robert",
+    "surname": "Robert",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_YBqJRLE.jpeg",
+    "belong_to": 2,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 4,
+  "fields": {
+    "created": "2021-04-20T16:32:07.696Z",
+    "modified": "2021-04-20T16:32:07.696Z",
+    "name": "Michael",
+    "surname": "Michael",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_rH4RLWT.jpeg",
+    "belong_to": 2,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 5,
+  "fields": {
+    "created": "2021-04-20T16:32:26.225Z",
+    "modified": "2021-04-20T16:32:26.226Z",
+    "name": "William",
+    "surname": "William",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_FKjaksG.jpeg",
+    "belong_to": 4,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 6,
+  "fields": {
+    "created": "2021-04-20T16:32:49.279Z",
+    "modified": "2021-04-20T16:32:49.279Z",
+    "name": "David",
+    "surname": "David",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_bCjjH0T.jpeg",
+    "belong_to": 4,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 7,
+  "fields": {
+    "created": "2021-04-20T16:33:16.961Z",
+    "modified": "2021-04-20T16:33:16.961Z",
+    "name": "Richard",
+    "surname": "Richard",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_cfKVY6B.jpeg",
+    "belong_to": 4,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.baby",
+  "pk": 8,
+  "fields": {
+    "created": "2021-04-20T16:33:35.515Z",
+    "modified": "2021-04-20T16:33:35.515Z",
+    "name": "Joseph",
+    "surname": "Joseph",
+    "date_of_bearth": "2021-04-20",
+    "picture": "baby_pictures/nursery-school-picture_v9VEufI.jpeg",
+    "belong_to": 2,
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 2,
+  "fields": {
+    "created": "2021-04-20T16:15:17.281Z",
+    "modified": "2021-04-20T16:15:17.282Z",
+    "title": "YOGA AND EXERCISE",
+    "description": "Yoga and group exercise is perfect for sparking creative imagination in your child. Worlds apart from adult yoga, classes focus on more spontaneous movement and spatial awareness development. A great way to increase confidence and exercise with your child.",
+    "picture": "activity_pictures/nursery-school-picture.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 3,
+  "fields": {
+    "created": "2021-04-20T16:15:51.032Z",
+    "modified": "2021-04-20T16:15:51.032Z",
+    "title": "DANCE",
+    "description": "Much like sport, dance is great for developing motor skills and learning patience and discipline. Dance is also physically demanding and promotes a healthy and active lifestyle.",
+    "picture": "activity_pictures/nursery-school-picture_bRmoqpk.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 4,
+  "fields": {
+    "created": "2021-04-20T16:16:22.845Z",
+    "modified": "2021-04-20T16:16:22.845Z",
+    "title": "ARTS AND CRAFTS",
+    "description": "The creative pursuits offer young children countless ways of developing. ‘Creativity is inventing, experimenting, growing, taking risks, breaking rules, making mistakes, and having fun,’ says peace activist Mary Lou Cook. We couldn’t agree more.",
+    "picture": "activity_pictures/nursery-school-picture_hNa9ogS.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 5,
+  "fields": {
+    "created": "2021-04-20T16:16:44.879Z",
+    "modified": "2021-04-20T16:16:44.879Z",
+    "title": "COOKING",
+    "description": "Cooking isn’t just for adults! Here at Stars Day Nursery and Pre-School Academy, we promote good eating habits. Our childcare team educate the children on the importance of food groups and healthy eating, and it’s a fun way to get healthy, too.",
+    "picture": "activity_pictures/nursery-school-picture_DS4X0mF.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 6,
+  "fields": {
+    "created": "2021-04-20T16:17:43.416Z",
+    "modified": "2021-04-20T16:17:43.416Z",
+    "title": "BABY SIGNING",
+    "description": "Baby signing is an enjoyable way for young children to develop communication skills. Classes involve teaching children about different signs for words relating to family and play, and by using objects like balls and mirrors, it encourages children to explore their senses.",
+    "picture": "activity_pictures/nursery-school-picture_WyEFQ4p.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 7,
+  "fields": {
+    "created": "2021-04-20T16:18:34.423Z",
+    "modified": "2021-04-20T16:18:34.423Z",
+    "title": "LANGUAGES",
+    "description": "Young children are hardwired to learn languages and develop speech. The benefits include development in self-confidence and communication skills.",
+    "picture": "activity_pictures/nursery-school-picture_D76N44v.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.activity",
+  "pk": 8,
+  "fields": {
+    "created": "2021-04-20T16:19:29.126Z",
+    "modified": "2021-04-20T16:19:29.126Z",
+    "title": "PLAY!",
+    "description": "‘The evidence for the developmental benefits of play is actually overwhelming,’ explains Dr David Whitebread, professor at the University of Cambridge. Not only is play fun, but it rapidly advances cognitive development in children and improves happiness.",
+    "picture": "activity_pictures/nursery-school-picture_jrfYzzR.jpeg",
+    "created_by": 1
+  }
+},
+{
+  "model": "managers.sitting",
+  "pk": 1,
+  "fields": {
+    "created": "2021-04-20T16:34:26.988Z",
+    "modified": "2021-04-20T16:34:26.988Z",
+    "started_at": "2021-04-20T16:33:55Z",
+    "finished_at": "2021-04-20T16:33:57Z",
+    "done_by": 2,
+    "created_by": 1,
+    "activities": [
+      8,
+      7
+    ]
+  }
+},
+{
+  "model": "managers.sitting",
+  "pk": 2,
+  "fields": {
+    "created": "2021-04-20T16:34:45.776Z",
+    "modified": "2021-04-20T16:34:45.776Z",
+    "started_at": "2021-04-20T16:34:29Z",
+    "finished_at": "2021-04-20T16:34:31Z",
+    "done_by": 3,
+    "created_by": 1,
+    "activities": [
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "managers.sitting",
+  "pk": 3,
+  "fields": {
+    "created": "2021-04-20T16:34:58.187Z",
+    "modified": "2021-04-20T16:34:58.187Z",
+    "started_at": "2021-04-20T16:34:48Z",
+    "finished_at": "2021-04-20T16:34:50Z",
+    "done_by": 6,
+    "created_by": 1,
+    "activities": [
+      6,
+      5
+    ]
+  }
+},
+{
+  "model": "managers.sitting",
+  "pk": 4,
+  "fields": {
+    "created": "2021-04-20T16:35:13.509Z",
+    "modified": "2021-04-20T16:35:13.509Z",
+    "started_at": "2021-04-20T16:35:00Z",
+    "finished_at": "2021-04-20T16:35:02Z",
+    "done_by": 4,
+    "created_by": 1,
+    "activities": [
+      5,
+      3
+    ]
+  }
+},
+{
+  "model": "managers.sitting",
+  "pk": 5,
+  "fields": {
+    "created": "2021-04-20T16:35:34.814Z",
+    "modified": "2021-04-20T16:35:34.814Z",
+    "started_at": "2021-04-20T16:35:15Z",
+    "finished_at": "2021-04-20T16:35:17Z",
+    "done_by": 4,
+    "created_by": 1,
+    "activities": [
+      7,
+      3
+    ]
+  }
+}
+]

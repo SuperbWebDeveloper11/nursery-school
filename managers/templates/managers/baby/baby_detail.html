@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h3>{{ baby.name }} {{ baby.surname }}</h3>
+
+<div>
+    <p>Name: <b>{{ baby.name }}</b></p>
+    <p>Surname: <b>{{ baby.surname }}</b></p>
+    <p>Date Of Bearth: <b>{{ baby.date_of_bearth }}</b></p>
+    {% if baby.picture %}
+      <img src="{{ baby.picture.url }}" alt="Image">
+    {% else %}
+      {#<img src="{{ baby.picture.url }}" alt="Image">#}
+    {% endif %}
+    <p>Belong To: <b>{{ baby.belong_to.name }}</b></p>
+</div>
+
+<!-- Display 'Edit' and 'Delete' buttons -->
+<br />
+{% if user.is_authenticated and baby.created_by == request.user %}
+<p>
+<a href="{% url 'managers:baby_update' baby.pk %}" class="btn btn-outline-dark"> Update </a> 
+<a href="{% url 'managers:baby_delete' baby.pk %}" class="btn btn-outline-danger"> Delete </a>
+</p>
+{% endif %}
+
+{% endblock %}
+
+
+
